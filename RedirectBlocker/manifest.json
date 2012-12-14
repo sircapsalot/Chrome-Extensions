@@ -1,0 +1,23 @@
+{
+	"name": "Redirect Blocker",
+	"version": "1.0",
+	"manifest_version": 2,
+	"description": "Block annoying link redirects.",
+	
+	"background": {
+		"scripts": [ "js/jquery.js", "js/funcs.js" ]
+	},
+	
+	"content_scripts": [ {
+		"all_frames": true,
+		"js": [ "js/jquery.js", "js/funcs.js" ],
+		"matches": [ "file://*", "http://*/*" ],
+		"run_at": "document_end"
+	} ],
+	
+	"icons": {
+		"128": "images/redirect_blocker.png",
+		"16": "images/redirect_blocker.png",
+		"48": "images/redirect_blocker.png"
+	}
+}
