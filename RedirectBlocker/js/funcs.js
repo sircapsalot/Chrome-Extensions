@@ -1,3 +1,12 @@
+/*!
+ * Redirect Blocker v1
+ * 
+ * Copyright 2012, Daniel Davison
+ * Licensed under the GPL Version 2 license.
+ * 
+ * Date: December 16, 2012 -0500
+ */
+
 var sca = sca || {
 	init : function() {
 		$(sca.links).each(function() {
